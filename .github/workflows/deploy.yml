@@ -28,6 +28,7 @@ jobs:
       - name: Add course landing page
         run: |
           cp site/index.html dist/index.html
+          cp site/background.html dist/background.html
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
