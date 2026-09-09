@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>コンピューターによるデータ解析入門 | 地球物理学実験</title>
+
+  <style>
+    body {
+      font-family:
+        -apple-system, BlinkMacSystemFont,
+        "Segoe UI", "Hiragino Kaku Gothic ProN",
+        "Hiragino Sans", "Yu Gothic", "Meiryo", sans-serif;
+      margin: 0;
+      background-color: #f5f7fa;
+      color: #222;
+      line-height: 1.7;
+    }
+
+    header {
+      background-color: #243447;
+      color: white;
+      padding: 48px 20px;
+      text-align: center;
+    }
+
+    header h1 {
+      margin: 0 0 8px 0;
+      font-size: 2rem;
+    }
+
+    header p {
+      margin: 0;
+      font-size: 1.1rem;
+    }
+
+    main {
+      max-width: 900px;
+      margin: 40px auto;
+      padding: 0 20px;
+    }
+
+    section {
+      background-color: white;
+      margin-bottom: 28px;
+      padding: 28px 32px;
+      border-radius: 8px;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+    }
+
+    h2 {
+      margin-top: 0;
+      border-bottom: 2px solid #e5e7eb;
+      padding-bottom: 8px;
+    }
+
+    h3 {
+      margin-bottom: 6px;
+    }
+
+    .item {
+      margin: 22px 0;
+    }
+
+    .item p {
+      margin: 6px 0 12px 0;
+    }
+
+    .button {
+      display: inline-block;
+      padding: 10px 18px;
+      background-color: #2563eb;
+      color: white;
+      text-decoration: none;
+      border-radius: 5px;
+      font-weight: 600;
+    }
+
+    .button:hover {
+      background-color: #1d4ed8;
+    }
+
+    .advanced {
+      margin-top: 24px;
+      padding-top: 18px;
+      border-top: 1px solid #ddd;
+    }
+
+    .advanced .button {
+      background-color: #59636e;
+    }
+
+    .advanced .button:hover {
+      background-color: #414a53;
+    }
+
+    .notice {
+      background-color: #fff8e1;
+      border-left: 5px solid #f0b429;
+      padding: 16px 20px;
+      margin-top: 32px;
+    }
+
+    footer {
+      text-align: center;
+      color: #666;
+      padding: 30px 20px 50px;
+      font-size: 0.9rem;
+    }
+  </style>
+</head>
+
+<body>
+
+<header>
+  <h1>コンピューターによるデータ解析入門</h1>
+  <p>地球物理学実験</p>
+</header>
+
+<main>
+
+  <section>
+    <h2>準備</h2>
+
+    <div class="item">
+      <h3>1. Pythonの復習</h3>
+      <p>
+        Pythonの基本的な使い方を復習します。
+      </p>
+      <a class="button"
+         href="./lab/index.html?path=preparation/python-review.ipynb">
+        Pythonの復習を始める
+      </a>
+    </div>
+
+    <div class="item">
+      <h3>2. Pythonによるデータ解析の基礎</h3>
+      <p>
+        NumPy、pandas、matplotlibを使った
+        データ処理と可視化の基礎を学びます。
+      </p>
+      <a class="button"
+         href="./lab/index.html?path=preparation/data-analysis-basics.ipynb">
+        データ解析の基礎を始める
+      </a>
+    </div>
+  </section>
+
+
+  <section>
+    <h2>第13回　コンピューターによるデータ解析入門（1）</h2>
+
+    <div class="item">
+      <h3>回帰分析</h3>
+      <p>
+        実際のデータを解析しながら、
+        最小二乗法や相関係数について学びます。
+      </p>
+      <a class="button"
+         href="./lab/index.html?path=lesson13/lesson13.ipynb">
+        第13回の演習を始める
+      </a>
+    </div>
+
+    <div class="advanced">
+      <h3>発展：主成分分析</h3>
+      <p>
+        より発展的なデータ解析手法として、
+        主成分分析について学びます。
+      </p>
+      <a class="button"
+         href="./lab/index.html?path=lesson13/pca.ipynb">
+        主成分分析に進む
+      </a>
+    </div>
+  </section>
+
+
+  <section>
+    <h2>第14回　コンピューターによるデータ解析入門（2）</h2>
+
+    <div class="item">
+      <h3>時系列・周波数解析</h3>
+      <p>
+        移動平均や標準偏差、調和解析を用いて、
+        データに含まれる変動を調べます。
+      </p>
+      <a class="button"
+         href="./lab/index.html?path=lesson14/lesson14.ipynb">
+        第14回の演習を始める
+      </a>
+    </div>
+
+    <div class="advanced">
+      <h3>発展：FFTによる周波数解析</h3>
+      <p>
+        高速フーリエ変換（FFT）を用いて、
+        データに含まれる周期的な変動を解析します。
+      </p>
+      <a class="button"
+         href="./lab/index.html?path=lesson14/fft.ipynb">
+        FFTによる周波数解析に進む
+      </a>
+    </div>
+  </section>
+
+
+  <div class="notice">
+    <strong>Notebookの保存について</strong><br>
+    JupyterLiteで編集したNotebookは、使用しているブラウザ内に保存されます。
+    別のPCや別のブラウザには自動的に引き継がれません。
+    また、ブラウザのデータを削除すると作業内容が失われる場合があります。
+    演習終了後はNotebook（.ipynb）をPCに保存し、Moodleから提出してください。
+  </div>
+
+</main>
+
+<footer>
+  地球物理学実験 ― コンピューターによるデータ解析入門
+</footer>
+
+</body>
+</html>
